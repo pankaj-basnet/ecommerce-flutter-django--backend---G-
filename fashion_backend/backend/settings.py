@@ -25,18 +25,34 @@ SECRET_KEY = 'django-insecure-(cmsc#aol&u(tvgj05-33u5aypy+6s&q%2&(z0bvxcx^roy=*s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    
+    ## third party
+    'jazzmin',
+
+    # default setting
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    ## third party
+    "rest_framework",
+    "rest_framework.authtoken",
+    "djoser",
+
+
+
+    ## our apps
+    "core",
+
 ]
 
 MIDDLEWARE = [
@@ -54,15 +70,19 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
+        "DIRS": [BASE_DIR / "templates"],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "context_processors": [
+                "django.template.context_processors.debug",
+                "django.template.context_processors.request",
+                "django.contrib.auth.context_processors.auth",
+                "django.contrib.messages.context_processors.messages",
+                "django.template.context_processors.media",
+                "django.template.context_processors.i18n",
             ],
+            "builtins": ["core.templatetags.customtags"], #sn= #so
+
         },
     },
 ]
@@ -121,3 +141,27 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+########################           Third party           ##################################
+
+JAZZMIN_SETTINGS = {        # <------- https://django-jazzmin.readthedocs.io/configuration/
+    # title of the window (Will default to current_admin_site.site_title if absent or None)
+    "site_title": "Thrift+ Admin",
+
+    # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
+    "site_header": "Thrift+",
+
+    # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
+    "site_brand": "Thrift+",
+}
+
+REST_FRAMEWORK = {
+    #  'DEFAULT_AUTHENTIFICATION_CLASSES': # correct spelling for "token create" ---works fine for djoser --- REST_FRAMEWORK = {'DEFAULT_AUTHENTIFICATION_CLASSES': sn=
+    #  'DEFAULT_AUTHENTIFICATION_CLASSES': <---- changed spelling from  "'DEFAULT_AUTHENTIFICATION_CLASSES'" time 10hr-21m 
+    'DEFAULT_AUTHENTICATION_CLASSES': (  
+        'rest_framework.authentication.TokenAuthentication', # isn corrected spelling to authentication_classes from AUTHENTIFICATION_CLASSES
+    )
+}
+
+############################################################################################

@@ -1,22 +1,34 @@
-saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend
+
+<!-- ------------------------------------------------------------------ -->
+<!-- saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend -->
 $ source venv-0915/Scripts/activate
 bash: venv-0915/Scripts/activate: No such file or directory
 
-saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend
+
+% ------------------------------------------------------------------
+% saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend
 $ cd dj24
 
-saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master)
+
+<!-- ------------------------------------------------------------------ -->
+<!-- saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master) -->
 $ source venv-0915/Scripts/activate
 (venv-0915) 
-saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master)
+
+% ------------------------------------------------------------------
+% saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master)
 $ which python
 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24/venv-0915/Scripts/python
 (venv-0915) 
-saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master)
+
+<!-- ------------------------------------------------------------------ -->
+<!-- saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master) -->
 $ which python
 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24/venv-0915/Scripts/python
 (venv-0915) 
-saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master)
+
+% ------------------------------------------------------------------
+% saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master)
 $ pip install django
 Collecting django
   Downloading Django-5.1.1-py3-none-any.whl.metadata (4.2 kB)
@@ -45,7 +57,9 @@ ERROR: No matching distribution found for rest_framework
 [notice] A new release of pip is available: 24.0 -> 24.2
 [notice] To update, run: python.exe -m pip install --upgrade pip
 (venv-0915)
-saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master)
+
+<!-- ------------------------------------------------------------------ -->
+<!-- saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master) -->
 $ pip install djangorestframework
 Collecting djangorestframework
   Downloading djangorestframework-3.15.2-py3-none-any.whl.metadata (10 kB)
@@ -61,7 +75,9 @@ Successfully installed djangorestframework-3.15.2
 [notice] A new release of pip is available: 24.0 -> 24.2
 [notice] To update, run: python.exe -m pip install --upgrade pip
 (venv-0915) 
-saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master)
+
+% ------------------------------------------------------------------
+% saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master)
 $ pip install djoser
 Collecting djoser
   Using cached djoser-2.2.3-py3-none-any.whl.metadata (5.8 kB)
@@ -131,20 +147,32 @@ Successfully installed certifi-2024.8.30 cffi-1.17.1 charset-normalizer-3.3.2 cr
 [notice] A new release of pip is available: 24.0 -> 24.2
 [notice] To update, run: python.exe -m pip install --upgrade pip  
 (venv-0915)
-saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master)
+
+<!-- ------------------------------------------------------------------ -->
+<!-- saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master) -->
 (venv-0915)
-saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master)
+
+<!-- ------------------------------------------------------------------ -->
+<!-- saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24 (master) -->
 $ cd 'd:/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24/fashion_backend'      
 (venv-0915)
-saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24/fashion_backend (master)
+
+% ------------------------------------------------------------------
+% saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24/fashion_backend (master)
 (venv-0915)
-saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24/fashion_backend (master)       
+
+% ------------------------------------------------------------------
+% saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24/fashion_backend (master)       
 $ djang-admin startproject backend .
 bash: djang-admin: command not found
 (venv-0915)
-saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24/fashion_backend (master)       
+
+<!-- ------------------------------------------------------------------ -->
+<!-- saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24/fashion_backend (master)        -->
 $ django-admin startproject backend .
 (venv-0915)
-saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24/fashion_backend (master)       
+
+% ------------------------------------------------------------------
+% saurav@LAPTOP-JS10JJ6V MINGW64 /d/src_dev/z--proj/ecommerce-flutter-django-dbestech--backend/dj24/fashion_backend (master)       
 $ date 
 Sun, Sep 15, 2024  9:34:16 PM
