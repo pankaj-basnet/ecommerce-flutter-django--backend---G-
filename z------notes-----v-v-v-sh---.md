@@ -17,18 +17,109 @@ http://192.168.43.167:8000/admin/login/?next=/admin/
 
 // ######---------------------------//>>   
 
+    final results = fetchProducts(context.watch<HomeTabNotifier>().queryType);
+        context.read<HomeTabNotifier>().setRefetch(refetch); //sn=
 
-EXTRA NOTE -------------------------------
 
-This classic denim jacket is perfect for all ooo .
-from high-quality denim, it provides comfor ooo .
-Feature include a button-up front, chest ooo .
-adjustable waist tabs. Pair it with jeans or ooo .
-timeless look that goes out of style ooo .
-multiple sizes to 
+  void setRefetch(Function() r) {   *************************************** ( 2 )
+    ------------------------------------
 
---------------
+  void setIndex(String index) {
+    _index = index;
 
-16:57:12..2024-06-24..["https://m.media-amazon.com/images/I/81fVxpORcGL._AC_SY550_.jpg", "https://m.media-amazon.com/images/I/71Kj17yHemL._AC_SY550_.jpg"]..["blue", "black"]..  Classic Denim Jacket  4.3..men..
+    switch (index) {
+      case 'All':
+        setQueryType(QueryType.all);
+        refetch!();
 
-EXTRA NOTE -------------------------//>>--
+        setQueryType(QueryType.all);
+
+
+
+  void setQueryType(QueryType q) {
+-------------------------------------------------------------------------------------');
+
+<!-- fetch_products.dart -->
+  Future<void> fetchData() async {
+
+    useEffect(() {  **************************************************** ( 1 )
+    fetchData();
+
+  void refetch() { 
+    fetchData();
+
+
+
+ ---useEffect---D:src_devz--projecommerce-flutter-django-dbestech--ideosharinglibsrcproductshooksetch_products.dart----
+ refetch set
+ ---D:src_devz--projecommerce-flutter-django-dbestech--ideosharinglibsrchomecontrollershome_tab_notifier.dart---
+ ----------------------------------------------
+ refetch set
+ ---D:src_devz--projecommerce-flutter-django-dbestech--ideosharinglibsrchomecontrollershome_tab_notifier.dart---
+ ----------------------------------------------
+
+
+<!-- ========        MEN        ======== -->
+<!-- ========        MEN        ======== -->
+<!-- ========        MEN        ======== -->
+<!-- ========        MEN        ======== -->
+
+<!-- ======================================================================== -->
+    final results = fetchProducts(context.watch<HomeTabNotifier>().queryType); ^^^^^^^^ ( 2.5 )
+        context.read<HomeTabNotifier>().setRefetch(refetch); //sn=
+
+  void setRefetch(Function() r) {   *************************************** ( 2 )
+                                    ^^^^^  refetch set ^^^^^^ ( 3 )
+    ------------------------------------
+
+  void setIndex(String index) {
+    _index = index;
+
+    switch (index) {
+      case 'All':
+        setQueryType(QueryType.all);                    ^^^^^^ ( 1 )
+        refetch!();                 ^^^^^REFETCH RAN----^^^^^^ ( 2 ) 
+
+        setQueryType(QueryType.all);
+
+
+  void setQueryType(QueryType q) {  ^^^^^^^^^^^^^^^^^^^^^^^^ ( 1 )
+-------------------------------------------------------------------------------------');
+
+<!-- fetch_products.dart -->
+  Future<void> fetchData() async {
+
+    useEffect(() {  **************************************************** ( 1 )
+    fetchData();
+
+
+  void refetch() { 
+    fetchData();
+
+<!-- ======================================================================== -->
+
+ ---men---------------D:src_devz--projecommerce-flutter-django-dbestech--ideosharinglibsrchomecontrollershome_tab_notifier.dart
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ( 1 )-------------------------------------------------------------
+ 
+ REFETCH RAN----D:src_devz--projecommerce-flutter-django-dbestech--ideosharinglibsrcproductshooksetch_products.dart
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ( 2 ) ....... // already refetch set --- running here
+ 
+ refetch set
+ ---D:src_devz--projecommerce-flutter-django-dbestech--ideosharinglibsrchomecontrollershome_tab_notifier.dart---
+ ----------------------------------------------
+ 
+ ---men---------------D:src_devz--projecommerce-flutter-django-dbestech--ideosharinglibsrchomecontrollershome_tab_notifier.dart
+ ----------------------------------------------------------------------------------------------------------------------------
+ 
+ REFETCH RAN----D:src_devz--projecommerce-flutter-django-dbestech--ideosharinglibsrcproductshooksetch_products.dart
+ refetch set
+ ---D:src_devz--projecommerce-flutter-django-dbestech--ideosharinglibsrchomecontrollershome_tab_notifier.dart---
+ ----------------------------------------------
+ 
+ refetch set
+ ---D:src_devz--projecommerce-flutter-django-dbestech--ideosharinglibsrchomecontrollershome_tab_notifier.dart---
+ ----------------------------------------------
+ 
+ refetch set
+ ---D:src_devz--projecommerce-flutter-django-dbestech--ideosharinglibsrchomecontrollershome_tab_notifier.dart---
+ ----------------------------------------------
